@@ -359,7 +359,7 @@ div.tocify {
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
 <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger"
+workflowr <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span>
 </button>
 </p>
@@ -370,8 +370,8 @@ aria-hidden="true"></span>
 </li>
 <li>
 <a data-toggle="tab" href="#checks"> Checks <span
-class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> </a>
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+</a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -384,9 +384,9 @@ aria-hidden="true"></span> </a>
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 1
+aria-hidden="true"></span> 0
 </p>
 <p>
 <strong>Knit directory:</strong> <code>MichalS/</code> <span
@@ -409,21 +409,18 @@ versions</em> tab lists the development history.
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges">
-<span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted
-changes </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date
+</a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguncommittedchanges"
+<div id="strongRMarkdownfilestronguptodate"
 class="panel-collapse collapse">
 <div class="panel-body">
-<p>The R Markdown is untracked by Git. To know which version of the R
-Markdown file created these results, you’ll want to first commit it to
-the Git repo. If you’re still working on the analysis, you can ignore
-this warning. When you’re finished, you can run
-<code>wflow_publish</code> to commit the R Markdown file and build the
-HTML.</p>
+<p>Great! Since the R Markdown file has been committed to the Git
+repository, you know the exact version of the code that produced these
+results.</p>
 </div>
 </div>
 </div>
@@ -514,13 +511,13 @@ project makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrong573c6fe">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongb284e67">
 <span class="glyphicon glyphicon-ok text-success"
-aria-hidden="true"></span> <strong>Repository version:</strong> 573c6fe
+aria-hidden="true"></span> <strong>Repository version:</strong> b284e67
 </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrong573c6fe"
+<div id="strongRepositoryversionstrongb284e67"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -529,7 +526,7 @@ and connecting the code version to the results is critical for
 reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version 573c6fe.
+The results in this page were generated with repository version b284e67.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -551,7 +548,6 @@ Ignored files:
     Ignored:    zajecia/
 
 Untracked files:
-    Untracked:  analysis/cos.Rmd
     Untracked:  dane/
     Untracked:  data/BodyTemperature.txt
     Untracked:  data/mtcars.csv
@@ -571,9 +567,71 @@ have uncommitted changes.
 </div>
 <div id="versions" class="tab-pane fade">
 <p>
-There are no past versions. Publish this analysis with
-<code>wflow_publish()</code> to start tracking its development.
+These are the previous versions of the repository in which changes were
+made to the R Markdown (<code>analysis/cos.Rmd</code>) and HTML
+(<code>docs/cos.html</code>) files. If you’ve configured a remote Git
+repository (see <code>?wflow_git_remote</code>), click on the hyperlinks
+in the table below to view the files as they were in that past version.
 </p>
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+File
+</th>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+<th>
+Message
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+b284e67
+</td>
+<td>
+MSokol-creator
+</td>
+<td>
+2026-11-24
+</td>
+<td>
+wflow_publish(c("analysis/<em>Rmd", "docs/</em>html"))
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+b284e67
+</td>
+<td>
+MSokol-creator
+</td>
+<td>
+2026-11-24
+</td>
+<td>
+wflow_publish(c("analysis/<em>Rmd", "docs/</em>html"))
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr>
 </div>
 </div>
@@ -631,17 +689,21 @@ tzcode source: internal
 attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
+other attached packages:
+[1] workflowr_1.7.2
+
 loaded via a namespace (and not attached):
- [1] vctrs_0.7.3       cli_3.6.6         knitr_1.52        rlang_1.3.0      
- [5] xfun_0.62         stringi_1.8.9     otel_0.2.0        promises_1.5.0   
- [9] jsonlite_2.0.0    workflowr_1.7.2   glue_1.8.1        rprojroot_2.1.1  
-[13] git2r_0.36.2      htmltools_0.5.9   httpuv_1.6.17     sass_0.4.10      
-[17] rmarkdown_2.32    jquerylib_0.1.4   evaluate_1.0.5    tibble_3.3.1     
-[21] fastmap_1.2.0     yaml_2.3.12       lifecycle_1.0.5   stringr_1.6.0    
-[25] compiler_4.5.3    fs_2.1.0          Rcpp_1.1.2        pkgconfig_2.0.3  
-[29] rstudioapi_0.19.0 later_1.4.8       digest_0.6.39     R6_2.6.1         
-[33] pillar_1.11.1     magrittr_2.0.5    bslib_0.12.0      tools_4.5.3      
-[37] cachem_1.1.0     </code></pre>
+ [1] vctrs_0.7.3       httr_1.4.9        cli_3.6.6         knitr_1.52       
+ [5] rlang_1.3.0       xfun_0.62         stringi_1.8.9     otel_0.2.0       
+ [9] processx_3.10.0   promises_1.5.0    jsonlite_2.0.0    glue_1.8.1       
+[13] rprojroot_2.1.1   git2r_0.36.2      htmltools_0.5.9   httpuv_1.6.17    
+[17] sass_0.4.10       rmarkdown_2.32    jquerylib_0.1.4   tibble_3.3.1     
+[21] evaluate_1.0.5    fastmap_1.2.0     yaml_2.3.12       lifecycle_1.0.5  
+[25] whisker_0.4.1     stringr_1.6.0     compiler_4.5.3    fs_2.1.0         
+[29] pkgconfig_2.0.3   Rcpp_1.1.2        rstudioapi_0.19.0 later_1.4.8      
+[33] digest_0.6.39     R6_2.6.1          pillar_1.11.1     callr_3.8.0      
+[37] magrittr_2.0.5    bslib_0.12.0      tools_4.5.3       cachem_1.1.0     
+[41] getPass_0.2-4    </code></pre>
 </div>
 </div>
 </div>
