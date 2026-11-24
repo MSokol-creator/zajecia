@@ -1,0 +1,63 @@
+---
+title: "Moje CV"
+---
+
+# Imię Nazwisko
+
+**Email:** amamf.exe@gmail.com
+**Telefon:** +48 725 322 440
+**Lokalizacja:** Poznań, Polska
+
+## Podsumowanie
+Tworzoe strone w r studio
+
+## Doświadczenie zawodowe
+
+### Nazwa Stanowiska | Firma
+*Okres zatrudnienia (np. Styczeń 2020 - Obecnie)*
+
+- Tworzenie gier
+- Praca inzynierska
+- Korepetycje z matematyki
+
+### Poprzednie Stanowisko | Inna Firma
+*Okres zatrudnienia*
+
+- Uczenie matematyki
+- Dobre wyniki uczniow
+- Zdolnosc tlumaczenia 
+
+## Edukacja
+
+### Tytuł Studiów | Nazwa Uczelni
+*Rok ukończenia*
+
+- Informatyka i inzynieria danych
+- 4,18
+- Brak osiagniec specjalnych
+
+## Umiejętności
+
+- **Techniczne:** Git, c++, c#, arduino, R, SQL
+- **Miękkie:** Komunikacja, praca zespołowa, rozwiązywanie problemów
+- **Języki:** Polski (ojczysty), Angielski (B2)
+
+## Certyfikaty
+
+- Certyfikat Microsoft, 2021
+
+## Projekty
+
+### Nazwa Projektu
+- Praca Inzynierska
+- Arduino, aplikacji c#
+
+## Zainteresowania
+
+- Programowanie
+- Matematyka
+- Sport
+- Budowa komputera
+
+## Referencje
+Dostępne na życzenie
